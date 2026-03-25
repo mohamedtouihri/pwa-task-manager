@@ -78,7 +78,7 @@ pwa-task-manager/
 1. Push this repo to GitHub
 2. Go to **Settings → Pages**
 3. Source: `Deploy from a branch` → `main` → `/ (root)`
-4. Your app will be live at: `https://YOUR_USERNAME.github.io/pwa-task-manager`
+4. Your app will be live at: `https://mohamedtouihri.github.io/pwa-task-manager/`
 
 ---
 
