@@ -3,7 +3,7 @@
 A lightweight, offline-capable task manager built with **HTML, CSS, and vanilla JavaScript**.  
 This is a **Progressive Web App (PWA)** — it can be installed on desktop and mobile, and works without internet.
 
-![TaskFlow Preview](preview.png)
+![TaskFlow Preview](Preview.png)
 
 ---
 
