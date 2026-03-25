@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow – PWA Task Manager</title>
+
+  <meta name="description" content="A simple, fast task manager that works offline." />
+  <meta name="theme-color" content="#0f0f0f" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="install-banner" class="install-banner hidden">
+    <span>📲 Install TaskFlow on your device</span>
+    <button id="install-btn">Install</button>
+    <button id="dismiss-btn" aria-label="Dismiss">✕</button>
+  </div>
+
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">T</div>
+        <span class="brand-name">TaskFlow</span>
+      </div>
+
+      <nav class="filters">
+        <button class="filter-btn active" data-filter="all">
+          <span class="filter-icon">◈</span> All Tasks
+          <span class="badge" id="badge-all">0</span>
+        </button>
+        <button class="filter-btn" data-filter="active">
+          <span class="filter-icon">◇</span> Active
+          <span class="badge" id="badge-active">0</span>
+        </button>
+        <button class="filter-btn" data-filter="completed">
+          <span class="filter-icon">◆</span> Completed
+          <span class="badge" id="badge-completed">0</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="offline-status" id="offline-status">
+          <span class="status-dot online"></span>
+          <span id="status-text">Online</span>
+        </div>
+        <button id="clear-completed" class="ghost-btn">Clear completed</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1 class="page-title" id="page-title">All Tasks</h1>
+        <div class="task-stats">
+          <span id="stats-text">0 tasks remaining</span>
+        </div>
+      </header>
+
+      <div class="input-area">
+        <div class="input-wrapper">
+          <span class="input-icon">+</span>
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Add a new task and press Enter…"
+            autocomplete="off"
+            maxlength="100"
+          />
+          <select id="priority-select" aria-label="Priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+          <button id="add-btn" aria-label="Add task">Add</button>
+        </div>
+      </div>
+
+      <div class="task-list-container">
+        <ul id="task-list" class="task-list"></ul>
+        <div id="empty-state" class="empty-state">
+          <div class="empty-icon">✦</div>
+          <p>No tasks here.<br/>Add one above to get started.</p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
