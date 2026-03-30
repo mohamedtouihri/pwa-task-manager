@@ -1,5 +1,5 @@
 {
-  "name": "TaskFlow – Task Manager",
+  "name": "TaskFlow - Task Manager",
   "short_name": "TaskFlow",
   "description": "A simple, offline-capable task manager PWA.",
   "start_url": "/",
@@ -9,15 +9,15 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "icons/icon-192.svg",
+      "src": "mobile.png",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icons/icon-512.svg",
+      "src": "desktop.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],

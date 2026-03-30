@@ -53,7 +53,7 @@ pwa-task-manager/
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/pwa-task-manager.git
+   git clone https://github.com/mohamedtouihri/pwa-task-manager.git
    cd pwa-task-manager
    ```
 
@@ -78,7 +78,7 @@ pwa-task-manager/
 1. Push this repo to GitHub
 2. Go to **Settings → Pages**
 3. Source: `Deploy from a branch` → `main` → `/ (root)`
-4. Your app will be live at: `https://mohamedtouihri.github.io/pwa-task-manager/`
+4. Your app will be live at: https://mohamedtouihri.github.io/pwa-task-manager/
 
 ---
 
