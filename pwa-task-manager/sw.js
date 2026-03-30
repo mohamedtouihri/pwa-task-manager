@@ -1,5 +1,3 @@
-
-
 const CACHE_NAME = 'taskflow-v1';
 
 const ASSETS = [
