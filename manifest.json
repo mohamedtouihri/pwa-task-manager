@@ -1,8 +1,9 @@
 {
-  "name": "TaskFlow - Task Manager",
+  "name": "TaskFlow – Task Manager",
   "short_name": "TaskFlow",
   "description": "A simple, offline-capable task manager PWA.",
-  "start_url": "/",
+  "start_url": "/pwa-task-manager/",
+  "scope": "/pwa-task-manager/",
   "display": "standalone",
   "background_color": "#0d0d0d",
   "theme_color": "#0f0f0f",
@@ -20,7 +21,5 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ],
-  "categories": ["productivity", "utilities"],
-  "screenshots": []
+  ]
 }
