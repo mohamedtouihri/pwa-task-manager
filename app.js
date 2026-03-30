@@ -48,9 +48,8 @@ function generateId() {
   return Date.now().toString(36) + Math.random().toString(36).slice(2);
 }
 
-function formatDate(ts) {
-  const d = new Date(ts);
-  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+function formatDate() {
+  return `${day} ${month} ${year}, ${hours}:${mins}:${secs}`;
 }
 
 function render() {

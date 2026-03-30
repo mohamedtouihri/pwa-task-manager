@@ -1,5 +1,5 @@
 {
-  "name": "TaskFlow – Task Manager",
+  "name": "TaskFlow - Task Manager",
   "short_name": "TaskFlow",
   "description": "A simple, offline-capable task manager PWA.",
   "start_url": "/pwa-task-manager/",
